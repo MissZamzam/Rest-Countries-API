@@ -16,29 +16,49 @@ useEffect(()=>{
 })
 
     return (
-        
+        <div className='country-app'>    
+           
         <div className="wrapper">
-            <div className="header">Avengers Responsive Cards UI Design</div>
-            {countries.map((country)=>{
-                return(
         <div className="cards_wrap">
+        {countries.map((country)=>{
+                return(
                         <div className="card_item">
                             <div className="card_inner">
                                 <img src={country.coatOfArms.svg} />
                                 <div className="role_name">{country.name.common}</div>
-                                <div className="real_name">Benedict Cumberbatch</div>
-                                <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt aliqua.</div>
+                                <div className="real_name">Continent : {country.region}</div>
+                                <p className='film'>Timezones : {country.timezones}</p>
+                                <p className='film'>Capital : {country.capital}</p>
+                                <button>learn more</button>
+                             </div>
+
+
+
+                            <div class="flip-box-back">
+                            <div className="role_name">{country.name.official}</div>
+                                <p className='film'>Population : {country.population}</p>
+                                <p className='film'>{country.borders}</p>
+                                <p>Car : {country.car.side}</p>
+                                <p>{country.flag} </p>
+                                <p>{country.fifa}</p>
                             </div>
+
+                               
                         </div>
-                    </div>
+
+
 
                 )
             })}
 
-          
+           
 
-        </div>   
+                        
+</div>
+                    </div>   
+        </div>
+
+        
     );
   }
   

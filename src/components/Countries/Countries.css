@@ -5,15 +5,17 @@
 	box-sizing: border-box;
 	font-family: 'Noto Sans JP', sans-serif;
 }
-.app{
-    background-color: antiquewhite;
+
+.country-app{
+	background-color: rgb(46, 42, 42);
+	scroll-behavior: smooth;
+	overflow: hidden; /* Hide scrollbars */
+
 }
-
-
 .wrapper .header{
 	width: 100%;
 	height: 50px;
-	background: #e36686;
+	background: #c993a0;
 	color: #fff;
 	text-align: center;
 	display: flex;
@@ -23,6 +25,8 @@
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-weight: 900;
+	background-color: rgb(46, 42, 42);
+
 }
 
 .cards_wrap{
@@ -35,11 +39,11 @@
 
 .cards_wrap .card_item{
 	padding: 15px 25px;
-	width: 25%;
+	width: 20%;
 }
 
 .cards_wrap .card_inner{
-	background: #fff;
+	background: #070303;
 	border-radius: 5px;
 	padding: 35px 20px;
 	min-width: 225px;
@@ -66,9 +70,9 @@
 }
 
 .cards_wrap .card_item .real_name{
-	color: #b6c0c2;
+	color: #29c3e2;
 	font-size: 12px;
-	font-weight: 100;
+	font-weight: 600;
 	margin: 5px 0 10px;
 }
 
@@ -102,3 +106,6 @@
 		font-size: 14px;
 	}
 }
+
+
+
