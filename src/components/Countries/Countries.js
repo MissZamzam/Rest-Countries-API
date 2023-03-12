@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Countries.css'
 import { useEffect } from 'react';
+// import Popup from '../Popup/Popup';
 
 function Countries() {
 
@@ -28,7 +29,9 @@ useEffect(()=>{
                                 <div className="real_name">Continent : {country.continents}</div>
                                 <p className='film'>Capital : {country.capital}</p>
                                 <p className='film'>Timezones : {country.timezones}</p>
-                                {/* <button>learn more</button> */}
+                                <button>
+                                    {/* <Popup /> */}
+                                    </button> 
                              </div>
                              
 
