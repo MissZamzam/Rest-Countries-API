@@ -1,21 +1,21 @@
 import React from 'react'
 import { useState } from 'react'
+import Modal from 'react-bootstrap/Modal';
 
-const Popup = () => {
+
+const Popup = (props) => {
     const [modal, setModal] = useState(false)
 
-    const toggleModal = () => {
-        setModal(!modal)
-    }
   return (
     <div>
-      <button 
-      onClick={toggleModal}
-      className='btn-modal'>
-        open
-      </button>
-      <button data-target="#profile-dialog" data-toggle="modal" class="btn pmd-ripple-effect btn-primary " type="button">Profile Modal</button>
-<div tabindex="-1" class="modal pmd-modal fade pmd-profile-modal" id="profile-dialog" style="display: none;" aria-hidden="true">
+
+      <button data-target="#profile-dialog" data-toggle="modal" class="btn pmd-ripple-effect btn-primary " type="button"
+	  onClick={() => setModal(true)}
+	  >Profile Modal</button>
+<div tabindex="-1" class="modal pmd-modal fade pmd-profile-modal" id="profile-dialog" style="display: none;" aria-hidden="true"
+modal={modal}
+onHide={() => setModal(false)}
+>
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">
 			<div class="modal-body">
