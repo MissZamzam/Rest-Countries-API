@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Countries.css'
 import { useEffect } from 'react';
+import Filter from './Filter/Filter';
 
 function Countries() {
 
@@ -16,7 +17,8 @@ useEffect(()=>{
 })
 
     return (
-        <div className='country-app'>    
+        <div className='country-app'>  
+        <Filter />  
         <div className="wrapper">
         <div className="cards_wrap">
         {countries.map((country)=>{
