@@ -26,7 +26,7 @@ const Header = () => {
 
         <div>
           <button className="btn-moon" onClick={() => changeTheme()}>
-            {/* <i className="fas fa-moon"></i> */}
+            <i className="fas fa-moon"></i>
             Theme
           </button>
         </div>

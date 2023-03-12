@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Countries.css'
 import { useEffect } from 'react';
-// import Popup from '../Popup/Popup';
+import Popup from '../Popup/Popup';
 
 function Countries() {
 
@@ -23,20 +23,21 @@ useEffect(()=>{
         {countries.map((country)=>{
                 return(
                         <div className="card_item">
+
                             <div className="card_inner">
                                 <img src={country.coatOfArms.svg} alt="coat of arms"/>
                                 <div className="role_name">{country.name.common}</div>
                                 <div className="real_name">Continent : {country.continents}</div>
                                 <p className='film'>Capital : {country.capital}</p>
                                 <p className='film'>Timezones : {country.timezones}</p>
-                                <button>
-                                    
-                                    </button> 
+                                <Popup name={country.capital}/>
+                                {/* <Modal name={product.name} description={product.description} /> */}
+
+                                <button>Edit</button> 
                              </div>
                              
 
-
-                            {/* <div className="back">
+                            <div className="card_back">
                                 <h2>{country.name.official}</h2>
                                 <p>Population : {country.population}</p>
                                 <p>{country.borders}</p>
@@ -44,7 +45,7 @@ useEffect(()=>{
                                 <p>{country.flag} </p>
                                 <p>{country.fifa}</p>
                             </div>
-                            */}
+                            
 
                                
                         </div>

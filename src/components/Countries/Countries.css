@@ -7,7 +7,8 @@
 }
 
 .country-app{
-	background-color: rgb(99, 101, 114);
+	background-color: #3b5257;
+
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
 	margin-top: 100px;
@@ -51,6 +52,12 @@
 	min-height: 315px;
 	max-height: 370px;
 	width: 100%;
+	box-shadow: 
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 .cards_wrap .card_item img{
