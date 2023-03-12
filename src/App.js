@@ -1,6 +1,6 @@
 import Countries from './components/Countries/Countries';
 import Header from './components/Header';
-import Popup from './components/Popup/Popup';
+import Modal from './components/Modal/Modal';
 import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,7 +13,7 @@ function App() {
 
       <Routes>
       <Route path="/" element={ <Countries/> } />
-        <Route path='/pop' element={<Popup />}/>
+      <Route path='/pop' element={<Modal />}/>
       </Routes>
     </div>
   );

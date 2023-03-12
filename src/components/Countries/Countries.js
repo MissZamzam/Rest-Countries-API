@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Countries.css'
 import { useEffect } from 'react';
-import Popup from '../Popup/Popup';
 
 function Countries() {
 
@@ -30,13 +29,14 @@ useEffect(()=>{
                                 <div className="real_name">Continent : {country.continents}</div>
                                 <p className='film'>Capital : {country.capital}</p>
                                 <p className='film'>Timezones : {country.timezones}</p>
-                                <Popup name={country.capital}/>
                                 {/* <Modal name={product.name} description={product.description} /> */}
 
-                                <button>Edit</button> 
-                             </div>
+                                <button onClick={() => document.querySelector('.modal').classList.add('open')}>
+        Open Modal
+      </button>
+                                 </div>
                              
-
+{/* 
                             <div className="card_back">
                                 <h2>{country.name.official}</h2>
                                 <p>Population : {country.population}</p>
@@ -45,7 +45,7 @@ useEffect(()=>{
                                 <p>{country.flag} </p>
                                 <p>{country.fifa}</p>
                             </div>
-                            
+                             */}
 
                                
                         </div>
