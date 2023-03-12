@@ -17,7 +17,6 @@ useEffect(()=>{
 
     return (
         <div className='country-app'>    
-           
         <div className="wrapper">
         <div className="cards_wrap">
         {countries.map((country)=>{
@@ -28,22 +27,21 @@ useEffect(()=>{
                                 <div className="role_name">{country.name.common}</div>
                                 <div className="real_name">Continent : {country.continents}</div>
                                 <p className='film'>Capital : {country.capital}</p>
-
                                 <p className='film'>Timezones : {country.timezones}</p>
-                                <button>learn more</button>
+                                {/* <button>learn more</button> */}
                              </div>
                              
 
 
-
-                            {/* <div class="flip-box-back">
-                            <div className="role_name">{country.name.official}</div>
-                                <p className='film'>Population : {country.population}</p>
-                                <p className='film'>{country.borders}</p>
+                            {/* <div className="back">
+                                <h2>{country.name.official}</h2>
+                                <p>Population : {country.population}</p>
+                                <p>{country.borders}</p>
                                 <p>Car : {country.car.side}</p>
                                 <p>{country.flag} </p>
                                 <p>{country.fifa}</p>
-                            </div> */}
+                            </div>
+                            */}
 
                                
                         </div>
