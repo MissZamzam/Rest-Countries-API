@@ -30,7 +30,7 @@ useEffect(()=>{
                                 <p className='film'>Capital : {country.capital}</p>
                                 <p className='film'>Timezones : {country.timezones}</p>
                                 <button>
-                                    {/* <Popup /> */}
+                                    
                                     </button> 
                              </div>
                              
