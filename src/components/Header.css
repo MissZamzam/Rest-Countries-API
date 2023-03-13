@@ -1,13 +1,16 @@
+/* Overvall padding */
+
+
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 30px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-	color: #3b5257;
+    color: #3b5257;
     background-color: black;
     box-shadow: 0 5px 10px hsla(200, 15%, 8%, 0.1);
     text-transform: uppercase;

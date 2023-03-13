@@ -6,6 +6,7 @@ import Filter from './Filter/Filter';
 function Countries() {
 
     const [countries, setCountries] = useState([])
+    
 
 useEffect(()=>{
     fetch('https://restcountries.com/v3.1/all')
@@ -18,7 +19,7 @@ useEffect(()=>{
 
     return (
         <div className='country-app'>  
-        <Filter />  
+                <Filter />  
         <div className="wrapper">
         <div className="cards_wrap">
         {countries.map((country)=>{

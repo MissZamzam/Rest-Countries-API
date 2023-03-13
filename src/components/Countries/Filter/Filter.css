@@ -1,18 +1,64 @@
+
 .filter{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgb(14, 15, 15);
+    background-color:#333d47 ;
+
 }
+
+.filter .form-control{
+    width: 100%;
+}
+
 .filter .form-control input{
-background-color:transparent ;
-border: none;
-outline: none;
-padding: 8px;
-border-radius: 5px;
-color: white;
+    background-color:#333d47 ;
+    border: none;
+    outline: none;
+    padding: 12px;
+    /* border-radius: 5px; */
+    color: white;
+    letter-spacing: 0.5px;
+    width:100% ;
+    margin: 0 0 30px;
+
+
 }
+
 .filter .form-control input::placeholder{
     color: white;
+    
+}
+
+.filter .region-filter{
+    width: 100%;
+}
+
+.filter .region-filter .select{
+    background-color:#424f5c ;
+    color: white;
+    padding: 8px;
+    width: 200px;
+    border: none;
+
+}
+
+@media (min-width: 768px) {
+    .filter{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .filter .form-control{
+        width: auto;
+    }
+    .filter .form-control input{
+        width: auto;
+        margin: 0;
+    }
+   
+    .filter .region-filter{
+        width: auto;
+    }
 }
