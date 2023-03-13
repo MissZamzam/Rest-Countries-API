@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Countries.css'
 import { useEffect } from 'react';
-import Filter from './Filter/Filter';
+import Filter from '../Filter/Filter';
+import { Link } from 'react-router-dom';
+import Country from '../Country/Country';
 
 function Countries() {
 
@@ -33,10 +35,9 @@ useEffect(()=>{
                                 <p className='film'>Capital : {country.capital}</p>
                                 <p className='film'>Timezones : {country.timezones}</p>
                                 {/* <Modal name={product.name} description={product.description} /> */}
-
-                                <button onClick={() => document.querySelector('.modal').classList.add('open')}>
-        Open Modal
-      </button>
+                                <Link to='./country'>
+                                <button>Details</button>
+                                </Link>
                                  </div>
                              
 {/* 
