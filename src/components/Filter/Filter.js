@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './Filter.css'
+import React, { useState, useEffect } from 'react';
 
 
 const Filter = () => {
@@ -9,7 +9,7 @@ const Filter = () => {
     const { value } = event.target;
     setSearchValue(value.toLowerCase());
   };
-
+// search
   useEffect(() => {
     const countryName = document.querySelectorAll('.role_name');
 
@@ -21,11 +21,10 @@ const Filter = () => {
       }
     });
   }, [searchValue]);
-
   return (
   <section className='filter'>
     <form className='form-control'>
-    <input id="search" type="text" value={searchValue} onChange={handleSearch} 
+      <input id="search" type="text" value={searchValue} onChange={handleSearch} 
         placeholder='Search for a country' />
     </form>
     <div className='region-filter'>
@@ -36,8 +35,6 @@ const Filter = () => {
             <option value='Asia'>Asia</option>
             <option value='Europe'>Europe</option>
             <option value='Oceania'>Oceania</option>
-
-
         </select>
     </div>
   </section>
