@@ -5,9 +5,7 @@ import Filter from '../Filter/Filter';
 import { Link } from 'react-router-dom';
 
 function Countries() {
-
     const [countries, setCountries] = useState([])
-    
 
 useEffect(()=>{
     fetch('https://restcountries.com/v3.1/all')
@@ -16,7 +14,7 @@ useEffect(()=>{
        console.log(data);
        setCountries(data)
     })
-})
+  }, []);
 
     return (
         <div className='country-app'>  
@@ -34,6 +32,8 @@ useEffect(()=>{
                                 <div className="real_name">Continent : {country.continents}</div>
                                 <p className='film'>Capital : {country.capital}</p>
                                 <p className='film'>Timezones : {country.timezones}</p>
+                                <p className='films'>Region : {country.region}</p>
+
                                 {/* <Modal name={product.name} description={product.description} /> */}
                                 <Link to='./country'>
                                 <button>Details</button>

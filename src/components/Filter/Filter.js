@@ -1,9 +1,10 @@
-import './Filter.css'
 import React, { useState, useEffect } from 'react';
+import './Filter.css'
 
 
 const Filter = () => {
   const [searchValue, setSearchValue] = useState('');
+  
 
   const handleSearch = (event) => {
     const { value } = event.target;
@@ -21,6 +22,9 @@ const Filter = () => {
       }
     });
   }, [searchValue]);
+
+
+
   return (
   <section className='filter'>
     <form className='form-control'>
