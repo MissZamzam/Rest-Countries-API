@@ -3,7 +3,6 @@ import './Countries.css'
 import { useEffect } from 'react';
 import Filter from '../Filter/Filter';
 import { Link } from 'react-router-dom';
-import Country from '../Country/Country';
 
 function Countries() {
 
@@ -21,6 +20,7 @@ useEffect(()=>{
 
     return (
         <div className='country-app'>  
+        
                 <Filter />  
         <div className="wrapper">
         <div className="cards_wrap">
