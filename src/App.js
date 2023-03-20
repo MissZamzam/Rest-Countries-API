@@ -4,11 +4,13 @@ import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Filter from './components/Filter/Filter';
 import Country from './components/Country/Country';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-            <Header />
+            {/* <Header /> */}
+            <Navbar />
 
      <Routes>
       <Route path="/" element={ <Countries/> } />

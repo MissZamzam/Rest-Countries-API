@@ -23,11 +23,6 @@ const Filter = () => {
     });
   }, [searchValue]);
 
-// const filterRegions = async (region)=> {
-//   const url = 'https://restcountries.com/v3.1/all'
-// }
-
-// const url = "https://restcountries.eu/rest/v2/all"
 
 
   return (
