@@ -1,166 +1,151 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  color: #f2f2f2;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-nav{
-  background: #222222;
-  padding: 10px 40px 10px 70px;
-  border: 1px solid #000;
-  border-left: none;
-  border-right: none;
-}
-nav ul{
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-nav ul li.logo{
-  flex: 1;
-  font-size: 30px;
-  font-weight: 700;
-}
-nav ul div.items{
-  padding: 0 25px;
-  display: inline-flex;
-}
-nav ul div.items a{
-  text-decoration: none;
-  font-size: 18px;
-  padding: 0 12px;
-}
-nav ul div.items a:hover{
-  color: cyan;
-}
-nav ul .search-icon{
-  height: 40px;
-  width: 240px;
-  display: flex;
-  background: #f2f2f2;
-  border-radius: 5px;
-}
-nav ul .search-icon input{
-  height: 100%;
-  width: 200px;
-  border: none;
-  outline: none;
-  padding: 0 10px;
-  color: #000;
-  font-size: 16px;
-  border-radius: 5px 0 0 5px;
-}
-nav ul .search-icon .icon{
-  height: 100%;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  border: 1px solid #cccccc;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-nav ul .search-icon .icon:hover{
-  background: #e6e6e6;
-}
-nav ul .search-icon .icon span{
-  color: #222222;
-  font-size: 18px;
-}
-nav ul li.btn{
-  font-size: 29px;
-  flex: 1;
-  padding: 0 40px;
-  display: none;
-}
-nav ul li.btn span{
-  height: 42px;
-  width: 42px;
-  text-align: center;
-  line-height: 42px;
-  border: 1px solid #151515;
-  border-radius: 5px;
-  cursor: pointer;
-}
-nav ul li.btn span.show:before{
-  content: '\f00d';
-}
-@media screen and (max-width: 1052px) {
-  nav{
-    padding: 10px 40px 10px 0px;
+* {
+    font-family: "Arima Madurai", sans-serif;
   }
-  nav ul li.logo{
-    display: none;
-  }
-  nav ul div.items{
-    flex: 4;
-  }
-}
-@media screen and (max-width: 800px){
-  nav ul li.btn{
-    display: block;
-  }
-  nav{
-    z-index: 1;
-    padding: 9px 40px 9px 0;
-  }
-  nav ul div.items{
-    z-index: -1;
+  
+nav {
     position: fixed;
-    top: -220px;
+    top: 0;
+    left: 0;
     right: 0;
+    height: 10px;
+    display: inline-flex;
+    background: #e6c612;
+    color: rgb(3, 3, 3);
+    box-shadow: 1px 3px 4px #e6e6e6;
+    align-items: center;
+  }
+
+  
+  .brand {
+    flex: 1;
+    margin: 0 25px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+  }
+  
+  .menu li a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  .search {
+    position: relative;
+    padding-bottom: 15px;
+    bottom: -7px;
+  }
+  
+  .search-input::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .search-input {
+    height: 0px;
+    border: none;
+    position: absolute;
+    left: -200px;
+    visibility: hidden;
+    opacity: 0;
+    top: 40px;
+    background: #5747e1;
+    color: white;
+    padding: 6px;
+    font-size: 12px;
+    outline: none;
+    width: 220px;
+    transition: 80ms all ease-in;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: none;
+  }
+  
+  .search-button {
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-top: 4px;
+  }
+  
+  .search-button:hover + .search-input,
+  .search-input:hover,
+  .search:hover .search-input {
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 9 !important;
+    box-shadow: 1px 3px 4px #e6e6e6;
+    height: 25px !important;
+  }
+  .banner img {
     width: 100%;
-    background: #222222;
-    display: inline-block;
-    transition: top .4s;
+    height: 350px;
   }
-  nav ul div.items.show{
-    top: 60px;
+  @media screen and (max-width: 1000px) {
+    nav {
+      width: 100%;
+      font-size: 10px;
+      display: block;
+      height: 200px;
+    }
+    .brand {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 1rem;
+    }
+    .navigation {
+      display: block;
+      margin: 0%;
+    }
+    .menu {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      margin-left: -36px;
+      margin-top: -10px;
+      font-size: 1rem;
+    }
+    menu ul li {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+    .search {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .search-content {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+    }
+  
+    .search-button {
+      display: block;
+      width: 7%;
+      text-align: center;
+      margin-left: 240px;
+      font-size: 1rem;
+    }
+    .search-input {
+      display: block;
+      width: 30%;
+      text-align: center;
+      margin-left: 310px;
+      font-size: 1rem;
+    }
   }
-  nav ul div.items li{
-    text-align: center;
-    line-height: 30px;
-    margin: 30px 0;
-  }
-  nav ul div.items li a{
-    font-size: 19px;
-  }
-}
-@media screen and (max-width: 405px) {
-  nav ul{
-    flex-wrap: nowrap;
-  }
-  nav ul li.search{
-    width: 50vmin;
-  }
-  nav ul li input{
-    width: 40vmin;
-  }
-  nav ul li .search-icon{
-    width: 10vmin;
-  }
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-  padding: 0 40px;
-  z-index: -2;
-}
-.content .text{
-  font-size: 40px;
-  font-weight: 800;
-  padding: 5px 0;
-  color: #202020;
-}
-.content .p{
-  font-size: 28px;
-  font-weight: 600;
-  color: #202020;
-}

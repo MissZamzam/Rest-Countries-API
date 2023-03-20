@@ -19,7 +19,7 @@ useEffect(()=>{
     return (
         <div className='country-app'>  
         
-                <Filter />  
+                {/* <Filter />   */}
         <div className="wrapper">
         <div className="cards_wrap">
         {countries.map((country)=>{
