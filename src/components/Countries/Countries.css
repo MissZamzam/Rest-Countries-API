@@ -11,7 +11,7 @@
 
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
-	/* margin-top: 200px; */
+	margin-top: 80px;
 
 }
 .wrapper .header{

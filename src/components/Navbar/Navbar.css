@@ -1,6 +1,6 @@
 nav{
   background-color: rgb(73, 70, 70);
-  height: 80px;
+  height: 90px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
@@ -24,14 +24,18 @@ li{
 }
 
 li a{
-  color: white;
+  color: rgb(175, 172, 175);
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 45px;
   height: 100%;
   display: flex;
   align-items: center;
-}
+  font-weight: 600;
 
+}
+li a:hover{
+  color: rgb(236, 229, 229);
+}
 li.search {
   display: flex;
   align-items: center;
@@ -50,26 +54,27 @@ li.search input[type="text"]{
   height: 100%;
   padding: 0 10px;
   border: none;
-  background-color: grey;
+  background-color: rgb(44, 41, 41);
   border-radius: 5px 0 0 5px;
   flex: 1;
+  margin: 0 10px;
 }
 
 
-li.search button[type="submit"] {
+/* li.search button[type="submit"] {
   height: 100%;
-  background-color: #b41a67;
+  background-color: black;
   color: rgb(255, 255, 255);
   border: none;
   padding: 0 10px;
   cursor: pointer;
   border-radius: 0 5px 5px 0;
   transition: background-color 0.2s ease;
-}
+} */
 
-li.search button[type="submit"]:hover {
+/* li.search button[type="submit"]:hover {
   background-color: #444;
-}
+} */
 
 @media (max-width: 768px) {
   ul {
@@ -84,6 +89,7 @@ li.search button[type="submit"]:hover {
   
   li.search form {
     width: 100%;
+    height: 40px;
   }
   
   li.search input[type="text"] {
