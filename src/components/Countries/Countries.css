@@ -7,11 +7,11 @@
 }
 
 .country-app{
-	background-color: #a17686;
+	background-color: grey;
 
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
-	margin-top: 200px;
+	/* margin-top: 200px; */
 
 }
 .wrapper .header{
@@ -45,7 +45,7 @@
 }
 
 .cards_wrap .card_inner{
-	background: #c92c94;
+	background: #0a090a;
 	border-radius: 5px;
 	padding: 35px 20px;
 	min-width: 225px;
