@@ -12,28 +12,12 @@
 	background-color: rgb(209, 204, 204);
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
-	margin-top: 80px;
-
-}
-.wrapper .header{
-	width: 100%;
-	height: 50px;
-	background: #c993a0;
-	color: #fff;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-weight: 900;
-	background-color: rgb(46, 42, 42);
+	margin-top: 100px;
 
 }
 
 .cards_wrap{
-	padding: 20px;
+	padding: 70px 100px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -91,9 +75,27 @@
 	color: #7b8ca0;
 }
 
+
+
+ a {
+	display: inline-block;
+	/* padding: 10px 20px; */
+	/* background-color: #333; */
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.2s ease-in-out;
+  }
+  
+   a:hover {
+	background-color: #555;
+  }
+  
+
 @media screen and (max-width: 1024px){
 	.cards_wrap{
 		margin-top: 40px;
+		padding: 10px;
 	}
 	.cards_wrap .card_item{
 		width: 33%;
@@ -103,6 +105,7 @@
 @media screen and (max-width: 768px){
 	.cards_wrap{
 		margin-top: 100px;
+		padding: 10px 20px;
 	}
 	.cards_wrap .card_item{
 		width: 50%;
@@ -117,6 +120,9 @@
 @media screen and (max-width: 568px){
 	.country-app{
 		margin-top: 100px;
+	}
+	.cards_wrap{
+		padding: 40px 10px;
 	}
 	.cards_wrap .card_item{
 		width: 100%;
