@@ -4,6 +4,8 @@ import './Navbar.css'
 const Navbar = () => {
 
     const [searchValue, setSearchValue] = useState('');
+    const [searchContinent, setSearchContinent] = useState('');
+
 
 
     const handleSearch = (event) => {
@@ -24,6 +26,24 @@ const Navbar = () => {
   }, [searchValue]);
 
 
+
+
+  const handleSearchContinent = (event) => {
+    const { value } = event.target;
+    setSearchContinent(value.toLowerCase());
+  };
+  // search
+useEffect(() => {
+const countinentName = document.querySelectorAll('.real_name');
+
+countinentName.forEach((name) => {
+  if (name.innerText.toLowerCase().includes(searchContinent)) {
+    name.parentElement.parentElement.style.display = 'block';
+  } else {
+    name.parentElement.parentElement.style.display = 'none';
+  }
+});
+}, [searchContinent]);
   return (
     <nav>
         <ul>
@@ -31,6 +51,7 @@ const Navbar = () => {
             <li className="search">
                 <form>
                     <input type="text" placeholder='search country...' value={searchValue} onChange={handleSearch} />
+                    <input type="text" placeholder='search continent...' value={searchContinent} onChange={handleSearchContinent} />
 
                     {/* <button type='submit'>Search</button> */}
                 </form>
