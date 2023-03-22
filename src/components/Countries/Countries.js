@@ -31,7 +31,7 @@ useEffect(()=>{
                                 <div className="role_name">{country.name.common}</div>
                                 <div className="real_name">Continent : {country.continents}</div>
                                 <p className='film'>Capital : {country.capital}</p>
-                                <p className='film'>Timezones : {country.timezones}</p>
+                                {/* <p className='film'>Timezones : {country.timezones}</p> */}
                                 <p className='films'>Region : {country.region}</p>
 
                                 {/* <Modal name={product.name} description={product.description} /> */}

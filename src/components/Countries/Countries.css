@@ -4,11 +4,12 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Noto Sans JP', sans-serif;
+	scroll-behavior: smooth;
+
 }
 
 .country-app{
 	background-color: rgb(209, 204, 204);
-
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
 	margin-top: 80px;
@@ -91,14 +92,21 @@
 }
 
 @media screen and (max-width: 1024px){
+	.cards_wrap{
+		margin-top: 40px;
+	}
 	.cards_wrap .card_item{
 		width: 33%;
 	}
 }
 
 @media screen and (max-width: 768px){
+	.cards_wrap{
+		margin-top: 100px;
+	}
 	.cards_wrap .card_item{
 		width: 50%;
+		
 	}
 	.wrapper .header{
 		font-size: 16px;
@@ -107,6 +115,9 @@
 }
 
 @media screen and (max-width: 568px){
+	.country-app{
+		margin-top: 100px;
+	}
 	.cards_wrap .card_item{
 		width: 100%;
 	}
