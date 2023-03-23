@@ -1,8 +1,8 @@
 
 
 nav {
-	background: #2d4059; 
-  color: #fff;
+	background: #042e2c; 
+	color: #ffa900;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -51,7 +51,7 @@ nav {
 }
 
 .search input {
-  background-color: #555;
+	background: #1b1a1a; 
   border: none;
   border-radius: 5px;
   color: #fff;

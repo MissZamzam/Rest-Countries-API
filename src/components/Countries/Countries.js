@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Countries.css";
-import { useEffect } from "react";
-// import Filter from "../Filter/Filter";
 import { Link } from "react-router-dom";
 
 function Countries() {
@@ -31,15 +29,14 @@ function Countries() {
                 <div className="real_name">Continent : {continents}</div>
                 <p className="film">Capital : {capital}</p>
 
-                <Link
-                  to={{
-                    pathname: "./country",
-                    state: {
-                      name: country.name.common,
-                      capital: country.capital,
-                    }
-                  }}>
-                  <button>Learn More</button>
+               
+                <Link to={{
+                  pathname: './country',
+                  state: {
+                    country: country
+                  }
+                }}>
+                  <button>more</button>
                 </Link>
               </div>
             </div>
