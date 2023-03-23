@@ -9,7 +9,7 @@
 }
 
 .country-app{
-	background-color: rgb(209, 204, 204);
+	background: #ff5722; 
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
 	margin-top: 100px;
@@ -30,7 +30,7 @@
 }
 
 .cards_wrap .card_inner{
-	background: #0a090a;
+	background: #2d4059; 
 	border-radius: 5px;
 	padding: 35px 20px;
 	min-width: 225px;
