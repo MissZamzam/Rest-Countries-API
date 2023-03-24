@@ -16,9 +16,9 @@ const Country = (props) => {
     </div>
     <div class="text">
       <h1>{props.name}</h1>
-      {/* <p>Capital: {capital}</p> */}
+      <p>Capital: {props.capital}</p>
       <p>{props.continents}</p>
-      {/* <p>{props.name.common}</p> */}
+      <p>{props.name.common}</p>
       <p>Your text content goes here</p>
       <p>Your text content goes here</p>
       <p>Your text content goes here</p>
