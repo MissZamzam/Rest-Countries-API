@@ -19,7 +19,7 @@ function Countries() {
       {/* <Filter />   */}
       <div className="cards_wrap">
         {countries.map((country) => {
-          const { capital, continents, region, coatOfArms } = country;
+          const { capital, continents, coatOfArms } = country;
 
           return (
             <div className="card_item">
@@ -29,15 +29,20 @@ function Countries() {
                 <div className="real_name">Continent : {continents}</div>
                 <p className="film">Capital : {capital}</p>
 
-               
-                <Link to={{
-                  pathname: './country',
-                  state: {
-                    country: country
-                  }
-                }}>
-                  <button>more</button>
-                </Link>
+                <Link
+  to={{
+    pathname: '/country',
+    state: {
+      name: country.name.common,
+      capital: country.capital[0],
+      continent: country.continents,
+      flag: country.flags.svg,
+    },
+  }}
+>
+  <button>Learn More</button>
+</Link>
+
               </div>
             </div>
           );
