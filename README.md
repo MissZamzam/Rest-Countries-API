@@ -7,7 +7,7 @@ See all countries from the API on the homepage
 Search for a country,continet and city using an input field 
 Click on a country to see more detailed information on a separate page 
 
-## Deploying
+## Deployment
 Vercel
 
 
