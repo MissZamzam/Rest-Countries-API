@@ -4,7 +4,7 @@ import './Country.css';
 
 const Country = () => {
   const location = useLocation();
-  const { name, population, continent, capital, coatOfArms } = location.state || {};
+  const { name, capital, continent, flag } = location.state || {};
 
   return (
     <div className="container">
@@ -12,7 +12,7 @@ const Country = () => {
         <a href="#" className="back-link"><i className="fas fa-arrow-left"></i> Back</a>
       </Link>
       <div className="image">
-      <img src={coatOfArms?.svg} alt="coat of arms" />
+        <img src={flag} alt="flag" />
       </div>
       <div className="text">
         <h1>{name}</h1>

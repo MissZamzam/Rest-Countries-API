@@ -29,7 +29,7 @@ function Countries() {
                 <div className="real_name">Continent : {continents}</div>
                 <p className="film">Capital : {capital}</p>
 
-                <Link to='/country'
+                <Link
   // to={{
   //   pathname: '/country',
   //   state: {
