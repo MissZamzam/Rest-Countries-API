@@ -14,7 +14,6 @@ function App() {
 
      <Routes>
       <Route path="/" element={ <Countries/> } />
-      {/* <Route path='/filter' element={<Filter />}/> */}
       <Route path='/country' element={<Country />}/>
      </Routes>
     </div>

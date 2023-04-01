@@ -29,16 +29,16 @@ function Countries() {
                 <div className="real_name">Continent : {continents}</div>
                 <p className="film">Capital : {capital}</p>
 
-                <Link
-  to={{
-    pathname: '/country',
-    state: {
-      name: country.name.common,
-      capital: country.capital[0],
-      continent: country.continents,
-      flag: country.flags.svg,
-    },
-  }}
+                <Link to='/country'
+  // to={{
+  //   pathname: '/country',
+  //   state: {
+  //     name: country.name.common,
+  //     capital: country.capital[0],
+  //     continent: country.continents,
+  //     flag: country.flags.svg,
+  //   },
+  // }}
 >
   <button>Learn More</button>
 </Link>

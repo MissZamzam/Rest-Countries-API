@@ -72,12 +72,12 @@ city.forEach((name)=>{
   return (
     <div>
       <nav>
-  <div class="logo">Countries</div>
-  <div class="menu-toggle">
-    <i class="fa fa-bars"></i>
+  <div className="logo">Countries</div>
+  <div className="menu-toggle">
+    <i className="fa fa-bars"></i>
   </div>
 
-  <div class="search">
+  <div className="search">
     <input type="text" placeholder='search country...' value={searchValue} onChange={handleSearch} />
     <input type="text" placeholder='search by continent...' value={searchContinent} onChange={handleSearchContinent} />
     <input type="text" placeholder='search City...' value={searchCity} onChange={handleSearchCity} />
