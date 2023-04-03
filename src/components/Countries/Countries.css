@@ -9,7 +9,7 @@
 }
 
 .country-app{
-	/* background: #014441;  */
+	background: #2e5a58; 
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
 	margin-top: 100px;
@@ -31,7 +31,7 @@
 
 .cards_wrap .card_inner{
 	background: #014441; 
-	border-radius: 5px;
+	border-radius: 15px;
 	padding: 35px 20px;
 	min-width: 225px;
 	min-height: 315px;
