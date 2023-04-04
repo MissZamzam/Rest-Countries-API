@@ -15,7 +15,7 @@ const Country = () => {
         <img src={flag} alt="flag" />
       </div>
       <div className="text">
-        <h1>Name: {name}</h1>
+        <p>Name: {name}</p>
         <p>Capital: {capital}</p>
         <p>Continent: {continent}</p>
       </div>

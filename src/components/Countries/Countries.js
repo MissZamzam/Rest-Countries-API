@@ -25,7 +25,7 @@ function Countries() {
             <div className="card_item">
               <div className="card_inner">
                 <img src={coatOfArms.svg} alt="coat of arms" />
-                <div className="role_name">{country.name.common}</div>
+                <div className="role_name">name:{country.name.common}</div>
                 <div className="real_name">Continent : {continents}</div>
                 <p className="film">Capital : {capital}</p>
 
