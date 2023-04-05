@@ -16,7 +16,7 @@ const Country = () => {
       </div>
       <div className="text">
         <p>Name: {name}</p>
-        <p>Capital: {capital}</p>
+        {/* <p>Capital: {capital}</p> */}
         <p>Continent: {continent}</p>
       </div>
     </div>
