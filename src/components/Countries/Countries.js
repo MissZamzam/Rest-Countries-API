@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function Countries() {
   const [countries, setCountries] = useState([]);
+  // const [showMessage, setShowMessage] =useState(false)
 
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
@@ -16,7 +17,8 @@ function Countries() {
 
   return (
     <div className="country-app">
-      {/* <Filter />   */}
+      {/* <button onClick={()=> setShowMessage(true)}>click me</button>
+      {showMessage && <p>Thank you for visiting</p>} */}
       <div className="cards_wrap">
         {countries.map((country) => {
           const { capital, continents, coatOfArms } = country;
@@ -40,7 +42,7 @@ function Countries() {
   //   },
   // }}
 >
-  <button>Learn More</button>
+  {/* <button>Learn More</button> */}
 </Link>
 
               </div>
