@@ -44,6 +44,21 @@ function Countries() {
 >
   {/* <button>Learn More</button> */}
 </Link>
+<div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img src="https://image.flaticon.com/icons/svg/993/993707.svg" alt="">
+        <h3>Launch</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae quam distinctio cupiditate, sed corrupti minima quis magni consequatur commodi.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+
 
               </div>
             </div>
