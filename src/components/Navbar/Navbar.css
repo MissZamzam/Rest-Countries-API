@@ -1,7 +1,7 @@
 
 
 nav {
-	background: #042e2c; 
+	background: #111111; 
 	color: #ffa900;
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +54,7 @@ nav {
 	background: #1b1a1a; 
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: #ffffff;
   margin: 0 10px;
   padding: 5px;
   width: 200px;

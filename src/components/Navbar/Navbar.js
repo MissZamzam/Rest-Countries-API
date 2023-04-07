@@ -53,7 +53,7 @@ const {value} = event.target;
 setSearchCity(value.toLowerCase())
 }
 useEffect(()=>{
-const city = document.querySelectorAll('.film');
+const city = document.querySelectorAll('.real_capital');
 
 city.forEach((name)=>{
   if(name.innerText.toLowerCase().includes(searchCity)){

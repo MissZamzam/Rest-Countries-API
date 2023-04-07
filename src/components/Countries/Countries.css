@@ -9,7 +9,7 @@
 }
 
 .country-app{
-	background: #2e5a58; 
+	background: #a19861; 
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
 	margin-top: 100px;
@@ -32,7 +32,7 @@
 }
 
 .cards_wrap .card_inner{
-	background: #014441; 
+	background: #0f1111; 
 	border-radius: 15px;
 	padding: 35px 20px;
 	min-width: 225px;
@@ -53,6 +53,7 @@
 	width: 80px;
 	height: 80px;
 	margin-bottom: 5px;
+	border-radius: 10%;
 }
 
 .cards_wrap .card_item .role_name{
@@ -70,6 +71,11 @@
 	color: #bccccf;
 	font-size: 12px;
 	font-weight: 600;
+	margin: 5px 0 10px;
+}
+.cards_wrap .card_item .real_capital{
+	color: #098399;
+	font-size: 15px;
 	margin: 5px 0 10px;
 }
 
