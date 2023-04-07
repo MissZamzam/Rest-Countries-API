@@ -9,7 +9,7 @@
 }
 
 .country-app{
-	background: #a19861; 
+	background: #00a9a5; 
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
 	margin-top: 100px;
@@ -32,7 +32,7 @@
 }
 
 .cards_wrap .card_inner{
-	background: #0f1111; 
+	background: #092327; 
 	border-radius: 10px;
 	padding: 15px 15px;
 	min-width: 225px;
@@ -53,12 +53,11 @@
 	margin-bottom: 5px;
 	display: block;
 	width: 100%;
-	height: 100%;
-	border-radius: 10px;
+	border-radius: 0px;
 }
 
 .cards_wrap .card_item .role_name{
-	color: #ffa900;
+	color: #00a9a5;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-transform: uppercase;

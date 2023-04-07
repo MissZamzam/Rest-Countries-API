@@ -1,8 +1,8 @@
 
 
 nav {
-	background: #111111; 
-	color: #ffa900;
+	background: #092327; 
+	color: #00a9a5;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -33,7 +33,7 @@ nav {
   padding: 0;
 }
 
-.navigation li {
+/* .navigation li {
   list-style: none;
   margin: 0 10px;
 }
@@ -41,7 +41,7 @@ nav {
 .navigation li a {
   color: #fff;
   text-decoration: none;
-}
+} */
 
 .search {
   display: flex;
@@ -51,7 +51,7 @@ nav {
 }
 
 .search input {
-	background: #1b1a1a; 
+	background: #034948; 
   border: none;
   border-radius: 5px;
   color: #ffffff;
