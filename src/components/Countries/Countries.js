@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Countries.css";
-import { Link } from "react-router-dom";
-
+// 
 function Countries() {
   const [countries, setCountries] = useState([]);
-  // const [showMessage, setShowMessage] =useState(false)
 
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
@@ -17,47 +15,23 @@ function Countries() {
 
   return (
     <div className="country-app">
-      {/* <button onClick={()=> setShowMessage(true)}>click me</button>
-      {showMessage && <p>Thank you for visiting</p>} */}
+    
       <div className="cards_wrap">
         {countries.map((country) => {
-          const { capital, continents, coatOfArms } = country;
+          const { name,capital, continents, flag, coatOfArms, currencies } = country;
 
           return (
             <div className="card_item">
               <div className="card_inner">
                 <img src={coatOfArms.svg} alt="coat of arms" />
-                <div className="role_name">name:{country.name.common}</div>
+                <div className="role_name">name:{name.common}</div>
                 <div className="real_name">Continent : {continents}</div>
-                <p className="film">Capital : {capital}</p>
-
-                <Link
-  // to={{
-  //   pathname: '/country',
-  //   state: {
-  //     name: country.name.common,
-  //     capital: country.capital[0],
-  //     continent: country.continents,
-  //     flag: country.flags.svg,
-  //   },
-  // }}
->
-  {/* <button>Learn More</button> */}
-</Link>
-<div class="card">
-    <div class="face face1">
-      <div class="content">
-        <img src="https://image.flaticon.com/icons/svg/993/993707.svg" alt="">
-        <h3>Launch</h3>
-      </div>
-    </div>
-    <div class="face face2">
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae quam distinctio cupiditate, sed corrupti minima quis magni consequatur commodi.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
+                {/* <p className="film">Capital : {capital}</p> */}
+                <h1 className="film film-details">Capital : {capital}</h1>
+                <p className="film film-details">Flag : {flag}</p>
+                {/* <p className="film film-details">Capital : {currencies.SRD.symbol}</p> */}
+                <p className="film film-details">Capital : {capital}</p>
+                <p className="film film-details">Capital : {capital}</p>
 
 
               </div>

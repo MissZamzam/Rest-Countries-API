@@ -27,6 +27,8 @@
 .cards_wrap .card_item{
 	padding: 15px 25px;
 	width: 20%;
+	position: relative;
+	perspective: 1000px;
 }
 
 .cards_wrap .card_inner{
@@ -43,6 +45,8 @@
     0 0 20px rgba(0, 0, 0, 0.3),
     0 0 30px rgba(0, 0, 0, 0.4),
     0 0 40px rgba(0, 0, 0, 0.5);
+	transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
 .cards_wrap .card_item img{
@@ -69,28 +73,20 @@
 	margin: 5px 0 10px;
 }
 
-.cards_wrap .card_item .film{
+.cards_wrap .card_item .film {
 	font-size: 14px;
 	line-height: 24px;
 	color: #7b8ca0;
-}
-
-
-
- a {
-	display: inline-block;
-	/* padding: 10px 20px; */
-	/* background-color: #333; */
-	color: #fff;
-	text-decoration: none;
-	border-radius: 5px;
-	transition: background-color 0.2s ease-in-out;
+	display: none; /* Hide the <p> tag by default */
   }
   
-   a:hover {
-	background-color: #555;
+  .cards_wrap .card_item:hover .film {
+	display: block; /* Display the <p> tag on hover */
   }
   
+
+
+
 
 @media screen and (max-width: 1024px){
 	.cards_wrap{
