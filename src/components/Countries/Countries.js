@@ -30,9 +30,9 @@ function Countries() {
                 <p className="real_capital">Capital : {capital}</p>
                 {/* <img src={coatOfArms.svg} alt="coat of arms" /> */}
                 <h1 className="film film-details">Timezones : {timezones}</h1>
-                <p className="film film-details">population : {population}</p>
-                <p className="film film-details">Fifa : {fifa}</p>
-                <p className="film film-details">Car : {car.side}</p>
+                <p className="film1 film-details">population : {population}</p>
+                <p className="film2 film-details">Fifa : {fifa}</p>
+                <p className="film3 film-details">Car : {car.side}</p>
 
 
 

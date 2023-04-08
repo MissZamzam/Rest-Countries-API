@@ -9,7 +9,7 @@
 }
 
 .country-app{
-	background: #00a9a5; 
+	background: #f7fbfc	; 
 	scroll-behavior: smooth;
 	overflow: hidden; /* Hide scrollbars */
 	margin-top: 100px;
@@ -32,8 +32,8 @@
 }
 
 .cards_wrap .card_inner{
-	background: #092327; 
-	border-radius: 10px;
+	background: #111618	; 
+	/* border-radius: 10px; */
 	padding: 15px 15px;
 	min-width: 225px;
 	min-height: 315px;
@@ -42,8 +42,7 @@
 	box-shadow: 
     0 0 5px rgba(0, 0, 0, 0.1),
     0 0 10px rgba(0, 0, 0, 0.2),
-    0 0 20px rgba(0, 0, 0, 0.3),
-    0 0 30px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 0, 0, 0.4),
     0 0 40px rgba(0, 0, 0, 0.5);
 	transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -68,7 +67,7 @@
 }
 
 .cards_wrap .card_item .real_name{
-	color: #bccccf;
+	color: #B9848C;
 	font-size: 12px;
 	font-weight: 600;
 	margin: 5px 0 10px;
@@ -82,14 +81,44 @@
 .cards_wrap .card_item .film {
 	font-size: 14px;
 	line-height: 24px;
-	color: #7b8ca0;
+	color: #9f6bc0;
 	display: none; /* Hide the <p> tag by default */
   }
-  
+
+  .cards_wrap .card_item .film1 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #0db331;
+	display: none; /* Hide the <p> tag by default */
+  }  
+  .cards_wrap .card_item .film2 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #e087b5;
+	display: none; /* Hide the <p> tag by default */
+  }
+  .cards_wrap .card_item .film3{
+	font-size: 14px;
+	line-height: 24px;
+	color: #c3547f;
+	display: none; /* Hide the <p> tag by default */
+  }
+
   .cards_wrap .card_item:hover .film {
 	display: block; /* Display the <p> tag on hover */
   }
   
+  .cards_wrap .card_item:hover .film1 {
+	display: block; /* Display the <p> tag on hover */
+  }
+
+  .cards_wrap .card_item:hover .film2{
+	display: block; /* Display the <p> tag on hover */
+  }
+
+  .cards_wrap .card_item:hover .film3 {
+	display: block; /* Display the <p> tag on hover */
+  }
 
 
 

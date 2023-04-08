@@ -1,7 +1,7 @@
 
 
 nav {
-	background: #092327; 
+	background: #111618	; 
 	color: #00a9a5;
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +51,7 @@ nav {
 }
 
 .search input {
-	background: #034948; 
+	background: #042525; 
   border: none;
   border-radius: 5px;
   color: #ffffff;
