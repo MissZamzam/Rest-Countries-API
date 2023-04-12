@@ -18,7 +18,7 @@ function Countries() {
     
       <div className="cards_wrap">
         {countries.map((country) => {
-          const { name,capital, continents, flag,population, car,coatOfArms,fifa,timezones, flags } = country;
+          const { name,capital, continents, maps,population, car,coatOfArms,fifa,timezones, flags } = country;
 
           return (
             <div className="card_item">
@@ -28,7 +28,8 @@ function Countries() {
                 <div className="role_name">{name.common}</div>
                 <div className="real_name">Continent : {continents}</div>
                 <p className="real_capital">Capital : {capital}</p>
-                {/* <img src={coatOfArms.svg} alt="coat of arms" /> */}
+                <p className="real_capital"><a href={maps.googleMaps}>View map</a></p>
+
                 <h1 className="film film-details">Timezones : {timezones}</h1>
                 <p className="film1 film-details">population : {population}</p>
                 <p className="film2 film-details">Fifa : {fifa}</p>
