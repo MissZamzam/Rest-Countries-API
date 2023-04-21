@@ -24,7 +24,6 @@ function Countries() {
             maps,
             population,
             car,
-            coatOfArms,
             fifa,
             timezones,
             flags,
@@ -38,9 +37,9 @@ function Countries() {
                 <div className="role_name">{name.common}</div>
                 <div className="real_name">Continent : {continents}</div>
                 <p className="real_capital">Capital : {capital}</p>
-                <p className="real_capital">
+                {/* <p className="real_capital"> */}
                   <a href={maps.googleMaps}>View map</a>
-                </p>
+                {/* </p> */}
 
                 <h1 className="film film-details">Timezones : {timezones}</h1>
                 <p className="film1 film-details">population : {population}</p>

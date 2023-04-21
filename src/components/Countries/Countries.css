@@ -33,7 +33,7 @@
 
 .cards_wrap .card_inner{
 	background: #111618	; 
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	padding: 15px 15px;
 	min-width: 225px;
 	min-height: 315px;
